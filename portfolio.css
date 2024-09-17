@@ -1,0 +1,127 @@
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: gray;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+	background-color: #F5F5F5;
+}
+
+
+/* -----------NavBAR------------- */
+
+.navbar {
+    background-color:#0077ff71;
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    margin-left: 15px;
+    font-weight: 400;
+  }
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    border-top: 1px solid white;
+    animation: grow 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  .navbar-nav .nav-link.active {
+    color: white;
+    border-bottom: solid 1px white;
+  }
+  
+  @keyframes grow {
+    100% {
+      width: 80%;
+    }
+  }
+ /* -----------Header------------- */
+
+.HeaderPortfolio{
+    height: 50vh;
+background-image: linear-gradient(
+    #0077ffab,
+    #0077ffab
+    ),
+    url(https://alfaroukroute.github.io/Devfolio/assets/img/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;}
+  .bottomtextInHeader{
+    color: #ffffffc9;
+  }
+.bottomtextInHeader a{
+    color: #ffffffcf;
+text-decoration: none;
+}
+  
+ /* -----------fixedBtn------------- */
+.fixedBtn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #0078ff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  
+  .fixedBtn:active{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+ /* -----------portfolio------------- */
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  background-color: #fff;
+  border: solid 2px #0078ff;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.carousel-indicators .active {
+    background-color: #0078ff;
+}
+.portfoliocontect .top .infotext{
+    color: rgb(83, 83, 83);
+    margin-bottom: 5px;
+  
+}
+ /* -----------footer------------- */
+
+.footer
+{
+  background-color: #0062d3;
+}

@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Nunito",  sans-serif; */
+}
+
+/* ABout  */
+
+.txtBtn {
+  background-color: #388da8;
+  padding: 15px 0;
+}
+
+.arrowBtn {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.txtBtn:hover .arrowBtn {
+  transform: translateX(8px);
+}
+.txtBtn:hover{
+background-color: #6d9aa8; 
+
+}
+.checkIcon{
+  color: #388da8; 
+} 
+
+.imgLogo img {
+
+  opacity: 0.5;
+  filter: grayscale(1);
+  padding: 20px 40px;
+  transition: all 0.3s ease 0s;
+}
+
+
+.imgLogo img:hover {
+filter: none;
+opacity: 1;
+}
+
+
+/* features  */
+
+.featureH::after{
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 48%;
+  width: 4%;
+  height: 3px;
+  background-color: #388da8;
+}
+
+.tabIcon .icon{
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius:50% ;
+}
+.tabIcon .icon i {
+  color: #388da8;
+}
+
+.nav-pills .nav-link.active ,.tabtwo{
+  background:
+  color-mix(in srgb, #388da8, transparent 92%);
+}
+
+.tabtxt{
+ color:  rgba(33, 37, 41, 0.75);
+}
+
+.nav-link:hover {
+  background-color: color-mix(in srgb, #388da8, transparent 96%);
+}
